@@ -1,0 +1,1 @@
+console.log('%c App.js is running','color:red;');

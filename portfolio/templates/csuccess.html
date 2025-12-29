@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+<!-- Main Content -->
+
+{% block main %}
+<main class="max-w-4xl mx-auto px-4 py-8">
+    <h1>Message Sent Successfully</h1>
+</main>
+<script>
+    setTimeout(function(){
+        location.href = "/portfolio/"
+    },2000)
+</script>
+{% endblock %}

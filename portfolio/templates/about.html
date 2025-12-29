@@ -1,8 +1,10 @@
 {% extends "base.html" %}
+{% load static %}
 <!-- Main Content -->
 
 {% block main %}
     <!-- Main Content -->
+    
     <main class="max-w-4xl mx-auto px-4 py-8">
         <div class="max-w-2xl">
             <h1 class="text-3xl font-bold text-gray-900 mb-6">About Me</h1>
@@ -19,6 +21,9 @@
                 <p class="text-gray-600">
                     I believe in writing clean, maintainable code and following best practices
                     to deliver high-quality applications.
+                </p>
+                <p>
+                    <img src="{% static 'images/15-01-19-332_1280.webp' %}" alt="">
                 </p>
             </div>
 

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -12,12 +14,12 @@
     <nav class="bg-white shadow-sm">
         <div class="max-w-4xl mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <a href="/" class="text-xl font-bold text-indigo-600">Awesomeeee</a>
+                <a href="{% url 'home:homex' %}" class="text-xl font-bold text-indigo-600">Awesomeeee</a>
                 <div class="space-x-6">
-                    <a href="/portfolio/" class="text-indigo-600 font-semibold">Home</a>
-                    <a href="/portfolio/about/">About</a>
-                    <a href="/portfolio/projects/">Projects</a>
-                    <a href="/portfolio/contact/">Contact</a>
+                    <a href="{% url 'portfolio:home' %}" class="text-indigo-600 font-semibold">Home</a>
+                    <a href="{% url 'portfolio:about' %}">About</a>
+                    <a href="{% url 'portfolio:projects' %}">Projects</a>
+                    <a href="{% url 'portfolio:contact' %}">Contact</a>
                 </div>
             </div>
         </div>
@@ -33,6 +35,6 @@
             <p>&copy; 2024 My Portfolio. Built with Django Templates.</p>
         </div>
     </footer>
-
+    <script src="{% static 'js/app.js' %}"></script>
 </body>
 </html>
