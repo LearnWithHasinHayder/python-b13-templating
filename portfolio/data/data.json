@@ -1,0 +1,154 @@
+{
+  "site": {
+    "brand": "Awesomeeee",
+    "title": "My Portfolio",
+    "tailwind_cdn": "https://cdn.tailwindcss.com",
+    "footer": {
+      "year": "2026",
+      "text": "Built with Django Templates."
+    }
+  },
+  "navigation": [
+    { "key": "home", "label": "Home", "url_name": "portfolio:home" },
+    { "key": "about", "label": "About", "url_name": "portfolio:about" },
+    { "key": "projects", "label": "Projects", "url_name": "portfolio:projects" },
+    { "key": "contact", "label": "Contact", "url_name": "portfolio:contact" },
+    { "key": "github", "label": "GitHub", "url": "https://github.com/", "new_tab": true }
+  ],
+  "pages": {
+    "home": {
+      "title": "Home - My Portfolio",
+      "hero": {
+        "avatar_emoji": "👨‍💻",
+        "headline": "Hi, I'm John Doe",
+        "subheadline": "Web Developer & Django Enthusiast",
+        "description": [
+          "I build beautiful, functional websites using modern technologies.",
+          "Passionate about clean code and great user experiences."
+        ],
+        "primary_cta": { "label": "View My Work", "url_name": "portfolio:projects" },
+        "secondary_cta": { "label": "Contact Me", "url_name": "portfolio:contact" }
+      },
+      "stats": [
+        { "value": "3+", "label": "Years Experience" },
+        { "value": "50+", "label": "Projects Done" },
+        { "value": "30+", "label": "Happy Clients" }
+      ]
+    },
+    "about": {
+      "title": "About - My Portfolio",
+      "heading": "About Me",
+      "bio_paragraphs": [
+        "Hello! I'm a passionate web developer with a love for creating elegant solutions to complex problems. I specialize in Python and Django development.",
+        "When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.",
+        "I believe in writing clean, maintainable code and following best practices to deliver high-quality applications."
+      ],
+      "skills_heading": "Skills",
+      "skills": [
+        {
+          "category": "Backend",
+          "items": ["Python", "Django", "PostgreSQL", "REST APIs"]
+        },
+        {
+          "category": "Frontend",
+          "items": ["HTML/CSS", "JavaScript", "Tailwind CSS", "Responsive Design"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects - My Portfolio",
+      "heading": "My Projects",
+      "subtitle": "Some of my recent work",
+      "items": [
+        {
+          "emoji": "🛒",
+          "header_bg_class": "bg-indigo-100",
+          "title": "E-Commerce Platform",
+          "description": "A full-featured online store with cart, checkout, and payment integration.",
+          "tags": [
+            {
+              "label": "Django",
+              "bg_class": "bg-indigo-100",
+              "text_class": "text-indigo-700"
+            },
+            {
+              "label": "Stripe",
+              "bg_class": "bg-indigo-100",
+              "text_class": "text-indigo-700"
+            }
+          ]
+        },
+        {
+          "emoji": "📝",
+          "header_bg_class": "bg-green-100",
+          "title": "Task Manager",
+          "description": "A productivity app for managing tasks with deadlines and priorities.",
+          "tags": [
+            {
+              "label": "Django",
+              "bg_class": "bg-green-100",
+              "text_class": "text-green-700"
+            },
+            {
+              "label": "JavaScript",
+              "bg_class": "bg-green-100",
+              "text_class": "text-green-700"
+            }
+          ]
+        },
+        {
+          "emoji": "📊",
+          "header_bg_class": "bg-purple-100",
+          "title": "Analytics Dashboard",
+          "description": "Real-time data visualization dashboard with interactive charts.",
+          "tags": [
+            {
+              "label": "Django",
+              "bg_class": "bg-purple-100",
+              "text_class": "text-purple-700"
+            },
+            {
+              "label": "Chart.js",
+              "bg_class": "bg-purple-100",
+              "text_class": "text-purple-700"
+            }
+          ]
+        },
+        {
+          "emoji": "💬",
+          "header_bg_class": "bg-orange-100",
+          "title": "Chat Application",
+          "description": "Real-time messaging app with WebSocket support.",
+          "tags": [
+            {
+              "label": "Django",
+              "bg_class": "bg-orange-100",
+              "text_class": "text-orange-700"
+            },
+            {
+              "label": "Channels",
+              "bg_class": "bg-orange-100",
+              "text_class": "text-orange-700"
+            }
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact - My Portfolio",
+      "heading": "Get In Touch",
+      "subtitle": "Feel free to reach out!",
+      "form": {
+        "fields": [
+          { "name": "name", "type": "text", "label": "Name", "required": true },
+          { "name": "email", "type": "email", "label": "Email", "required": true },
+          { "name": "subject", "type": "text", "label": "Subject", "required": true },
+          { "name": "message", "type": "textarea", "label": "Message", "rows": 5, "required": true }
+        ],
+        "submit_label": "Send Message"
+      },
+      "direct_email": "hello@example.com",
+      "direct_email_label": "Or email me directly at"
+    }
+  }
+}
